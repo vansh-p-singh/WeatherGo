@@ -1,0 +1,194 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #0b131e;
+}
+main{
+    height:100vh;
+    width: 100vw;
+    justify-content: space-between;
+}
+.left{
+    height: 100%;
+    width: 70%;
+}
+header{
+    width: 80%;
+    color: white;
+    height: 10vh;
+    margin-top: 7vh;
+    justify-content: space-between;
+}
+header>h3{
+    font-size: 25px;
+}
+.searchHamburger{
+    cursor: pointer;
+    display: none;
+}
+.search{
+    height: 33px;
+    background-color: #202b3b;
+    color: white;
+    border-radius: 11px;
+    width: 40%;
+    padding-right: 5px;
+    position: relative;
+}
+#citySearch{
+    color: white;
+    padding-left: 10px;
+    border-radius: 11px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #202b3b;
+    border: 0px;
+    outline: none;
+    width: 93%;
+    height: 100%;
+}
+.searchBtn{
+    background-color: #202b3b;
+    border: 0px;
+    cursor: pointer;
+    color: white;
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
+.cityCard{
+    margin-top: 7vh;
+    padding: 7px;
+    color: white;
+    background-color: #202b3b;
+    border-radius: 10px;
+    width: 80%;
+    justify-content: space-between;
+    height: 35vh;
+}
+.cityDiv1{
+    height: 100%;
+    width: 50%;
+    justify-content: space-around;
+}
+.cityName{
+    font-size: 38px;
+}
+.cityTemp{
+    font-size: 38px;
+}
+.cityDiv2{
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    font-size: 65px;
+    color: rgb(255, 255, 255);
+}
+.cityExtra{
+    width: 80%;
+    height: 10vh;
+    margin-top: 7vh;
+    justify-content: space-between;
+    padding: 0px 5px;
+    background-color:#202b3b;
+    color: white;
+    border-radius: 7px;
+}
+.right{
+    height: 100vh;
+    width: 30%;
+    color: white;
+}
+.right>h3{
+    font-size: 22px;
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+}
+.majorCards{
+    row-gap: 15px;
+}
+.majorCard{
+    background-color: #202b3b;
+    height: 7vh;
+    align-items: center;
+    font-weight: 500;
+    justify-content: space-between;
+    padding: 0px 7px;
+}
+@media screen and (max-width:850px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .left{
+        width: 85%;
+    }
+    .right{
+        width: 70%;
+    }
+    .search{
+        width: 44%;
+    }
+}
+@media screen and (max-width:705px) {
+    .left>*{
+        width: 90%;
+    }
+    .right{
+        width: 80%;
+    }
+}
+@media screen and (max-width:650px) {
+    .left {
+        width: 93%;
+    }
+    header>h3 {
+        font-size: 23px;
+    }
+    div.flex.search {
+        display: none;
+        width: 90%;
+    }
+    .searchHamburger{
+        display: block;
+    }
+}
+@media screen and (max-width:600px) {
+    .left {
+        width: 100%;
+    }
+    .right{
+        width: 97%;
+    }
+    main{
+        width: 100%;
+    }
+    .cityName {
+        font-size: 30px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .cityDiv1{
+        width: 58%;
+    }
+    .cityCard{
+        height: 32vh;
+    }
+}
+@media screen and (max-width:550px) {
+    .cityExtra{
+        flex-direction: column;
+        height: 15vh;
+        justify-content: space-around;
+        margin-top: 1.5vh;
+        align-items: flex-start  !important;
+    }
+    .extraCard{
+        justify-content: space-between;
+        font-size: 18px;
+    }
+}

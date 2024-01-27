@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <main class="flex">
+        <div class="left flex flexColumn itemCenter">
+
+            <header class="flex itemCenter">
+                <div class="flex search">
+                    <input type="text" id="citySearch" class="flex itemCenter">
+                    <button class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <h3>WeatherGo</h3>
+                <div class="searchHamburger"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </header>
+            <div class="cityCard flex">
+                <div class="cityDiv1 flex flexColumn">
+                    <div class="citySpecs flex flexColumn">
+                        <h2 class="cityName"></h2>
+                        <p>Coordiantes: <span class="latitude"></span>, <span class="longitude"></span></p>
+                    </div>
+                    <h2 class="cityTemp"></h2>
+                </div>
+
+                <div class="cityDiv2 flex flexColumn">
+                    <i class="fa-solid fa-cloud-sun-rain"></i>
+                </div>
+            </div>
+
+            <div class="cityExtra flex itemCenter">
+                <div class="extraCard flex">
+                    <i class="fa-solid fa-water"></i> &nbsp;
+                    <p>Sea-L Pressure: <span class="seaLevel"></span></p>
+                </div>
+
+                <div class="extraCard flex">
+                    <i class="fa-solid fa-temperature-half"></i> &nbsp;
+                    <p>Humidity: <span class="humidity"></span></p>
+                </div>
+
+                <div class="extraCard flex">
+                    <i class="fa-solid fa-wind"></i> &nbsp;
+                    <p>Wind Speed: <span class="windSpeed"></span></p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="right flex flexColumn">
+            <h3>Major Cities</h3>
+            <div class="majorCards flex flexColumn">
+                <div class="majorCard flex">
+                    <p class="majorName">Mumbai</p>
+                    <p class="majorTemp" data-majorCity="mumbai"></p>
+                </div>
+
+                <div class="majorCard flex">
+                    <p class="majorName">Paris</p>
+                    <p class="majorTemp" data-majorCity="paris"></p>
+                </div>
+
+                <div class="majorCard flex">
+                    <p class="majorName">New York</p>
+                    <p class="majorTemp" data-majorCity="New York"></p>
+                </div>
+
+                <div class="majorCard flex">
+                    <p class="majorName">Houston</p>
+                    <p class="majorTemp" data-majorCity="Houston"></p>
+                </div>
+
+                <div class="majorCard flex">
+                    <p class="majorName">London</p>
+                    <p class="majorTemp" data-majorCity="london"></p>
+                </div>
+
+                <div class="majorCard flex">
+                    <p class="majorName">Berlin</p>
+                    <p class="majorTemp" data-majorCity="berlin"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
