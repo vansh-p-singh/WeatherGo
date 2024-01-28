@@ -1,6 +1,5 @@
 # WeatherGo
 
-Here's a well-structured README file for your weather app on GitHub:
 
 # Weather App ☀️
 
